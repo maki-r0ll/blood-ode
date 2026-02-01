@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Blood Ode Wiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Spectral:wght@400;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header banner image (separate from nav) -->
+    <header>
+        <img class="header-image" src="https://imgur.com/RLKRLiw.jpg" alt="Blood Ode Banner">
+    </header>
+
+    <!-- Navigation -->
+ <nav>
+    <a href="blood ode.html">Home</a>
+
+    <div class="dropdown">
+        <a href="#">Tome of Lore <span class="arrow">▾</span></a>
+        <div class="dropdown-content">
+            <a href="stories.html">Stories</a>
+            <a href="deities.html">Deities</a>
+            <a href="echeiros.html">The Echeirós</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">NPC <span class="arrow">▾</span></a>
+        <div class="dropdown-content">
+            <a href="rulers.html">Rulers</a>
+            <a href="minor-npcs.html">Minor NPCs</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Legends <span class="arrow">▾</span></a>
+        <div class="dropdown-content">
+            <a href="player-characters.html">Player Characters</a>
+            <a href="graveyard.html">Graveyard</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">The World <span class="arrow">▾</span></a>
+        <div class="dropdown-content">
+            <a href="map.html">Map</a>
+            <a href="darkfall.html">The Darkfall</a>
+            <a href="eternity.html">Eternity</a>
+            <a href="spirits.html">Spirits</a>
+        </div>
+    </div>
+</nav>
+<div class="wiki-container" style="display: flex;">
+  <aside class="wiki-sidebar">
+    <h3>Contents</h3>
+    <ul>
+      <li><a href="#etharis">Etharis</a></li>
+      <li><a href="#the-echeiros">The Echeirós</a></li>
+      <li><a href="#the-darkfall">The Darkfall</a></li>
+      <li><a href="#eternity">Eternity</a></li>
+      <li><a href="#spirits">Spirits</a></li>
+    </ul>
+  </aside>
+  <main class="wiki-main">
+    <!-- Main page content here -->
+     
+      <div class="infobox">
+            <h3>Quick Facts</h3>
+            <ul>
+                <li>Setting: Dark Fantasy</li>
+                <li>System: D&D 5e</li>
+                <li>Status: Campaign</li>
+            </ul>
+        </div>
+
+        <h1>Welcome to Blood Ode</h1>
+        <p>
+            Etharis is a dark and fractured world. The gods have vanished, leaving only silence in their wake. In their stead, demons
+            and angels stride openly across the land, shaping mortal destiny with fire and fury. Mortals endure amidst the ruins of
+            forgotten ages, where ancient ley lines—once lifeblood to gods and men alike—now lie unstable and contested, their power
+            coveted by all.
+        </p>
+        <p>
+            Time itself is marked by blood moons, each crimson rise casting its light every fifth week upon a people who know only that
+            their world is fragile, fading, and perilous. From dreadwights who linger as twisted echoes of their former selves, to
+            dragon-kin who walk as both human and wyrm, every shadowed corner of Etharis whispers of survival in the absence of divine
+            order.
+        </p>
+ <div style="display: flex; align-items: flex-start; gap: 2rem;">
+           
+            <figure class="map-block" style="flex:0 0 220px; max-width:220px; margin:0;">
+                <img id="etharis-map" src="https://imgur.com/njA2ncO.png" alt="Map of Etharis" style="width:100%; height:auto; border-radius:0 0 10px 10px; cursor:zoom-in;">
+                <figcaption style="text-align:center; font-size:.9rem; margin:.4rem 0 0; color:var(--ink);">
+                    Map of Etharis
+                </figcaption>
+            </figure>
+        </div>
+        <!-- Map Modal -->
+        <div id="map-modal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(20,10,20,0.92); align-items:center; justify-content:center;">
+            <img src="https://imgur.com/njA2ncO.png" alt="Map of Etharis" style="max-width:90vw; max-height:90vh; border-radius:12px; box-shadow:0 8px 32px #000a;">
+        </div>
+        <script>
+            const mapImg = document.getElementById('etharis-map');
+            const modal = document.getElementById('map-modal');
+            modal.addEventListener('click', () => { modal.style.display = 'none'; });
+            mapImg.addEventListener('click', () => { modal.style.display = 'flex'; });
+        </script>
+        
+  
+
+<style>
+
+
+.wiki-title::before { left: 0; }
+.wiki-title::after { right: 0; }
+</style>
+
+<div class="wiki-title">
+  <h1>Etharis</h1>
+  <h2>The Fractured World</h2>
+</div>
+
+
+
+
+
+
+
+<!-- Optional: Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+        <!-- Cards -->
+<!-- Cards -->
+<div class="wiki-containers">
+    <a class="wiki-card" href="echeiros.html">
+        <div class="wiki-card-img-wrap">
+            <img src="https://imgur.com/4v4j8ar.png" alt="The Echeirós">
+        </div>
+        <div class="wiki-card-text">The Echeirós</div>
+    </a>
+    <a class="wiki-card" href="darkfall.html">
+        <div class="wiki-card-img-wrap">
+            <img src="https://imgur.com/TWWfzc1.png" alt="The Darkfall">
+        </div>
+        <div class="wiki-card-text">The Darkfall</div>
+    </a>
+    <a class="wiki-card" href="deities.html">
+        <div class="wiki-card-img-wrap">
+            <img src="https://imgur.com/gCjRRIC.png" alt="Deities">
+        </div>
+        <div class="wiki-card-text">Deities</div>
+    </a>
+    <a class="wiki-card" href="spirits.html">
+        <div class="wiki-card-img-wrap">
+            <img src="https://imgur.com/geSbGwh.png" alt="Spirits">
+        </div>
+        <div class="wiki-card-text">Spirits</div>
+    </a>
+    <a class="wiki-card" href="eternity.html">
+        <div class="wiki-card-img-wrap">
+            <img src="https://imgur.com/5UKRIoU.png" alt="Eternity">
+        </div>
+        <div class="wiki-card-text">Eternity</div>
+    </a>
+</div>
+
+<style>
+.wiki-containers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 2.5rem auto;
+}
+
+.wiki-card {
+    width: 180px; /* consistent width */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #f7d774;
+    background: linear-gradient(135deg, #2d1b24 70%, #3a0d12 100%);
+    border: 2px solid #e94560;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px #000a;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.wiki-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px #e9456044, 0 4px 20px #000a;
+    border-color: #f7d774;
+}
+
+.wiki-card-img-wrap {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* keeps image square */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3a0d12;
+}
+
+.wiki-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills container without distortion */
+}
+
+.wiki-card-text {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    background: linear-gradient(90deg, rgba(34,20,26,0.95), rgba(58,13,18,0.95));
+    padding: 0.5rem 0;
+    border-top: 1px solid #e94560;
+}
+</style>
+
+
+       
+
+        <h2>References</h2>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank" rel="noopener">Wikipedia</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs: HTML</a></li>
+        </ul>
+  </main>
+</div>
+
+</div>
+
+    <footer>
+        <img src="https://imgur.com/ReQPhNy.png" alt="Blood Ode Logo" style="height:48px; vertical-align:middle; margin-right:.5em;">
+        &copy; 2025 Blood Ode. Powered by HTML &amp; CSS.
+    </footer>
+</body>
+</html>
